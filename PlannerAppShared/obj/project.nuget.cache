@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Dy468a1x/2LYIubxCLQDAi45FWA8FvmXcy7v3ivwLjTTNYqhcQYAKrAQJSKWQm01BBAjtyEvbjBM3IIDufD6Uw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ENG\\source\\repos\\PlannerApp\\PlannerAppShared\\PlannerAppShared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\ENG\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
