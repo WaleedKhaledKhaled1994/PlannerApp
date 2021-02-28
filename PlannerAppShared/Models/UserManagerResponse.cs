@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PlannerAppShared.Models
+namespace PlannerApp.Shared.Models
 {
     public class UserManagerResponse
     {

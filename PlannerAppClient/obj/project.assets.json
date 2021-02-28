@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.1": {
+      "AKSoftware.WebApi/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/AKSoftware.WebApi.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AKSoftware.WebApi.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/3.1.6": {
         "type": "package",
         "dependencies": {
@@ -354,6 +366,15 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "Newtonsoft.Json/11.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "Radzen.Blazor/3.1.0": {
         "type": "package",
         "dependencies": {
@@ -590,22 +611,36 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
-      "PlannerAppShared/1.0.0": {
+      "PlannerApp.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "AKSoftware.WebApi": "3.0.0",
           "System.ComponentModel.Annotations": "5.0.0"
         },
         "compile": {
-          "bin/placeholder/PlannerAppShared.dll": {}
+          "bin/placeholder/PlannerApp.Shared.dll": {}
         },
         "runtime": {
-          "bin/placeholder/PlannerAppShared.dll": {}
+          "bin/placeholder/PlannerApp.Shared.dll": {}
         }
       }
     }
   },
   "libraries": {
+    "AKSoftware.WebApi/3.0.0": {
+      "sha512": "oTmlV2XyhNJ1XjASz6iwxIklgMnPgAmyvPOOZvF46H+WqqLYXMiyFUgtpTwzbuIzW7V+nBOWA1pNAs2IFb8n6A==",
+      "type": "package",
+      "path": "aksoftware.webapi/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aksoftware.webapi.3.0.0.nupkg.sha512",
+        "aksoftware.webapi.nuspec",
+        "lib/netstandard2.0/AKSoftware.WebApi.dll",
+        "license.txt"
+      ]
+    },
     "Microsoft.AspNetCore.Authorization/3.1.6": {
       "sha512": "n0EC0W8jRpM2o1sKKYQpFuvE1sgW7juyEbhVZPcHy9VnHyZYvcIBHVJ6aPCtwqf/16KyqIB1XDVjPnPgyui47Q==",
       "type": "package",
@@ -1575,6 +1610,36 @@
         "runtime.json"
       ]
     },
+    "Newtonsoft.Json/11.0.2": {
+      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+      "type": "package",
+      "path": "newtonsoft.json/11.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.11.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec"
+      ]
+    },
     "Radzen.Blazor/3.1.0": {
       "sha512": "fXndL/CngQo4JPwGmvpBhaxAAr/RrzMN/EvNU61+DwdcNacnElF15XX0j59ozgIDu0TqPAEFYe5D23sE+a67tA==",
       "type": "package",
@@ -2501,10 +2566,10 @@
         "version.txt"
       ]
     },
-    "PlannerAppShared/1.0.0": {
+    "PlannerApp.Shared/1.0.0": {
       "type": "project",
-      "path": "../PlannerAppShared/PlannerAppShared.csproj",
-      "msbuildProject": "../PlannerAppShared/PlannerAppShared.csproj"
+      "path": "../PlannerAppShared/PlannerApp.Shared.csproj",
+      "msbuildProject": "../PlannerAppShared/PlannerApp.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2512,7 +2577,7 @@
       "Microsoft.AspNetCore.Components.WebAssembly >= 3.2.1",
       "Microsoft.AspNetCore.Components.WebAssembly.Build >= 3.2.1",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 3.2.1",
-      "PlannerAppShared >= 1.0.0",
+      "PlannerApp.Shared >= 1.0.0",
       "Radzen.Blazor >= 3.1.0",
       "System.Net.Http.Json >= 3.2.0"
     ]
@@ -2524,9 +2589,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ENG\\source\\repos\\PlannerApp\\PlannerAppClient\\PlannerAppClient.csproj",
-      "projectName": "PlannerAppClient",
-      "projectPath": "C:\\Users\\ENG\\source\\repos\\PlannerApp\\PlannerAppClient\\PlannerAppClient.csproj",
+      "projectUniqueName": "C:\\Users\\ENG\\source\\repos\\PlannerApp\\PlannerAppClient\\PlannerApp.Client.csproj",
+      "projectName": "PlannerApp.Client",
+      "projectPath": "C:\\Users\\ENG\\source\\repos\\PlannerApp\\PlannerAppClient\\PlannerApp.Client.csproj",
       "packagesPath": "C:\\Users\\ENG\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ENG\\source\\repos\\PlannerApp\\PlannerAppClient\\obj\\",
       "projectStyle": "PackageReference",
@@ -2549,8 +2614,8 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
-            "C:\\Users\\ENG\\source\\repos\\PlannerApp\\PlannerAppShared\\PlannerAppShared.csproj": {
-              "projectPath": "C:\\Users\\ENG\\source\\repos\\PlannerApp\\PlannerAppShared\\PlannerAppShared.csproj"
+            "C:\\Users\\ENG\\source\\repos\\PlannerApp\\PlannerAppShared\\PlannerApp.Shared.csproj": {
+              "projectPath": "C:\\Users\\ENG\\source\\repos\\PlannerApp\\PlannerAppShared\\PlannerApp.Shared.csproj"
             }
           }
         }
@@ -2603,7 +2668,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace PlannerAppClient
+namespace PlannerApp.Client
 {
     #line hidden
     using System;
@@ -63,14 +63,14 @@ using Microsoft.JSInterop;
 #nullable disable
 #nullable restore
 #line 8 "C:\Users\ENG\source\repos\PlannerApp\PlannerAppClient\_Imports.razor"
-using PlannerAppClient;
+using PlannerApp.Client;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 9 "C:\Users\ENG\source\repos\PlannerApp\PlannerAppClient\_Imports.razor"
-using PlannerAppClient.Shared;
+using PlannerApp.Client.Shared;
 
 #line default
 #line hidden
@@ -78,6 +78,13 @@ using PlannerAppClient.Shared;
 #nullable restore
 #line 11 "C:\Users\ENG\source\repos\PlannerApp\PlannerAppClient\_Imports.razor"
 using Radzen.Blazor;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "C:\Users\ENG\source\repos\PlannerApp\PlannerAppClient\_Imports.razor"
+using PlannerApp.Shared.Services;
 
 #line default
 #line hidden

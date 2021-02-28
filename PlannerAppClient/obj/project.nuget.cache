@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Yp6zSzfZGMayDQmUU/BL3n237wN4nRJx2/omyb3kmV8jdORAyK60L14b/6SzFgpKgpqLjmBEzTO+jcKB+PIcUg==",
+  "dgSpecHash": "KMUpkiJ48anImbbaKADVtCH4MuTDkgFRdlVfQ3WI8kHgL50hJ70e1o7j4n0U5RPzNOOJWKd3cQmlyV0QVaMVTg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ENG\\source\\repos\\PlannerApp\\PlannerAppClient\\PlannerAppClient.csproj",
+  "projectFilePath": "C:\\Users\\ENG\\source\\repos\\PlannerApp\\PlannerAppClient\\PlannerApp.Client.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ENG\\.nuget\\packages\\aksoftware.webapi\\3.0.0\\aksoftware.webapi.3.0.0.nupkg.sha512",
     "C:\\Users\\ENG\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.6\\microsoft.aspnetcore.authorization.3.1.6.nupkg.sha512",
     "C:\\Users\\ENG\\.nuget\\packages\\microsoft.aspnetcore.components\\3.1.6\\microsoft.aspnetcore.components.3.1.6.nupkg.sha512",
     "C:\\Users\\ENG\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\3.1.6\\microsoft.aspnetcore.components.analyzers.3.1.6.nupkg.sha512",
@@ -35,6 +36,7 @@
     "C:\\Users\\ENG\\.nuget\\packages\\microsoft.jsinterop.webassembly\\3.2.1\\microsoft.jsinterop.webassembly.3.2.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\ENG\\.nuget\\packages\\radzen.blazor\\3.1.0\\radzen.blazor.3.1.0.nupkg.sha512",
     "C:\\Users\\ENG\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\ENG\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",

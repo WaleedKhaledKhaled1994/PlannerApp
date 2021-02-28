@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace PlannerAppShared.Models
+namespace PlannerApp.Shared.Models
 {
     public class RegisterRequest
     {
