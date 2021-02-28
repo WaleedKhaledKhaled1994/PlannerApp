@@ -416,8 +416,10 @@ C:\Users\ENG\source\repos\PlannerApp\PlannerAppClient\obj\Debug\netstandard2.1\P
 C:\Users\ENG\source\repos\PlannerApp\PlannerAppClient\obj\Debug\netstandard2.1\PlannerApp.Client.dll
 C:\Users\ENG\source\repos\PlannerApp\PlannerAppClient\obj\Debug\netstandard2.1\PlannerApp.Client.pdb
 C:\Users\ENG\source\repos\PlannerApp\PlannerAppClient\obj\Debug\netstandard2.1\integrity\xsdtN6Z__o1gaom8-hldgCCXAdx8KOtiBSA9Qus86qY=.hash
-C:\Users\ENG\source\repos\PlannerApp\PlannerAppClient\obj\Debug\netstandard2.1\integrity\q7uuBxGWYFI_3flB01lKQFxpL3IlhGwZBEO-6NHzSdk=.hash
 C:\Users\ENG\source\repos\PlannerApp\PlannerAppClient\obj\Debug\netstandard2.1\integrity\NRvRhOQe0Fxc7HrRAWIS75GK-mfmdxYepEO6s8gfX2A=.hash
-C:\Users\ENG\source\repos\PlannerApp\PlannerAppClient\obj\Debug\netstandard2.1\integrity\xIrz9XODFst6wxvvevWLED0nB1GH8luiTILtnC8HVno=.hash
 C:\Users\ENG\source\repos\PlannerApp\PlannerAppClient\obj\Debug\netstandard2.1\integrity\PT5nAHKtpgns_zIaH45DQBOb4TC8La3xm5AvuNhye7I=.hash
-C:\Users\ENG\source\repos\PlannerApp\PlannerAppClient\obj\Debug\netstandard2.1\integrity\3ggrOseW8lIQc7VpLsVf2IOXjKblIK1BoononzxKhgk=.hash
+C:\Users\ENG\source\repos\PlannerApp\PlannerAppClient\obj\Debug\netstandard2.1\RazorDeclaration\Shared\AlertMessage.razor.g.cs
+C:\Users\ENG\source\repos\PlannerApp\PlannerAppClient\obj\Debug\netstandard2.1\Razor\Shared\AlertMessage.razor.g.cs
+C:\Users\ENG\source\repos\PlannerApp\PlannerAppClient\obj\Debug\netstandard2.1\integrity\xCl3MDJx3Q4E4r4WwL7LNZGdWu_ZqfefV8LQeJR5nCA=.hash
+C:\Users\ENG\source\repos\PlannerApp\PlannerAppClient\obj\Debug\netstandard2.1\integrity\Ettdj6EH1WtGLu7hxTSIK7V4eiXAl-x8ZsctOI_mlYI=.hash
+C:\Users\ENG\source\repos\PlannerApp\PlannerAppClient\obj\Debug\netstandard2.1\integrity\biB9zXFYdvW1aUFS-APpYR794Gn_4fwl-UfgLQWwll4=.hash

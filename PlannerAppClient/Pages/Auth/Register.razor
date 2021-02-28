@@ -2,7 +2,7 @@
 @layout AuthLayout
 @using PlannerApp.Shared.Models
 
-@inject AuthenticationService authService 
+@inject AuthenticationService authService
 @inject NavigationManager navigationManager
 
 <div class="row">
@@ -11,13 +11,7 @@
         <EditForm Model="model"
                   OnValidSubmit="RegisterUser">
             <RadzenCard>
-                @if (!string.IsNullOrWhiteSpace(message))
-                {
-                    <div class="alert alert-danger">
-                        hello
-                        @message
-                    </div>
-                }
+                <AlertMessage Message="@message" MessageType="@messageType" />
                 <DataAnnotationsValidator />
                 <ValidationSummary />
                 <label>First Name</label>
@@ -35,14 +29,14 @@
                               Text="Register"
                               ButtonStyle="Radzen.ButtonStyle.Primary"
                               class="btn-block mr-2"
-                              Disabled="isBusy"/>
+                              Disabled="isBusy" />
                 <RadzenButton ButtonType="Radzen.ButtonType.Button"
                               Text="Login"
                               ButtonStyle="Radzen.ButtonStyle.Secondary"
                               class="btn-block mr-2"
-                              Disabled="isBusy"/>
+                              Disabled="isBusy" />
             </RadzenCard>
-            
+
         </EditForm>
     </div>
 </div>
@@ -50,34 +44,29 @@
 @code {
     RegisterRequest model = new RegisterRequest();
     string message = string.Empty;
+    Models.AlertMessageType messageType = Models.AlertMessageType.Success;
     bool isBusy = false;
 
     public async Task RegisterUser()
     {
-        Console.WriteLine("Before the condition");
+
         isBusy = true;
         var result = await authService.RegisterUserAsync(model);
-        Console.WriteLine("Before the condition2");
 
         if (result.IsSuccess)
         {
-            Console.WriteLine("yes the condition");
-
             message = result.Message;
-            Console.WriteLine("yes the condition");
+            messageType = Models.AlertMessageType.Success;
 
         }
         else
         {
-            Console.WriteLine("no the condition");
-
-            message = result.Message;
-            Console.WriteLine("no the condition");
+            message = result.Errors.FirstOrDefault() ?? result.Message;
+            messageType = Models.AlertMessageType.Error;
 
 
         }
         isBusy = false;
-        Console.WriteLine("after the condition");
 
     }
 }

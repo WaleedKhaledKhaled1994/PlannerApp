@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace PlannerApp.Client.Pages.Auth
+namespace PlannerApp.Client.Shared
 {
     #line hidden
     using System;
@@ -89,16 +89,7 @@ using PlannerApp.Shared.Services;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 3 "C:\Users\ENG\source\repos\PlannerApp\PlannerAppClient\Pages\Auth\Register.razor"
-using PlannerApp.Shared.Models;
-
-#line default
-#line hidden
-#nullable disable
-    [Microsoft.AspNetCore.Components.LayoutAttribute(typeof(AuthLayout))]
-    [Microsoft.AspNetCore.Components.RouteAttribute("/auth/register")]
-    public partial class Register : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class AlertMessage : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -106,41 +97,49 @@ using PlannerApp.Shared.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 44 "C:\Users\ENG\source\repos\PlannerApp\PlannerAppClient\Pages\Auth\Register.razor"
+#line 7 "C:\Users\ENG\source\repos\PlannerApp\PlannerAppClient\Shared\AlertMessage.razor"
        
-    RegisterRequest model = new RegisterRequest();
-    string message = string.Empty;
-    Models.AlertMessageType messageType = Models.AlertMessageType.Success;
-    bool isBusy = false;
+    [Parameter]
+    public string Message { get; set; }
 
-    public async Task RegisterUser()
+    private Models.AlertMessageType messageType;
+    [Parameter]
+    public Models.AlertMessageType MessageType
     {
-
-        isBusy = true;
-        var result = await authService.RegisterUserAsync(model);
-
-        if (result.IsSuccess)
+        get => messageType;
+        set
         {
-            message = result.Message;
-            messageType = Models.AlertMessageType.Success;
+            messageType = value;
 
+            switch (messageType)
+            {
+                case Models.AlertMessageType.Error:
+                    alertClass = "alert-danger";
+                    break;
+
+                case Models.AlertMessageType.Warning:
+                    alertClass = "alert-warning";
+                    break;
+                case Models.AlertMessageType.Success:
+                    alertClass = "alert-success";
+
+                    break;
+                default:
+                    break;
+            }
         }
-        else
-        {
-            message = result.Errors.FirstOrDefault() ?? result.Message;
-            messageType = Models.AlertMessageType.Error;
+    }
 
+    string alertClass = "alert-info";
 
-        }
-        isBusy = false;
-
+    void HideMessage()
+    {
+        Message = string.Empty;
     }
 
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager navigationManager { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private AuthenticationService authService { get; set; }
     }
 }
 #pragma warning restore 1591

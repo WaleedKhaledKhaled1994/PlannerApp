@@ -6,7 +6,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "PlannerApp.Client.dll": "sha256-q7uuBxGWYFI+3flB01lKQFxpL3IlhGwZBEO\/6NHzSdk=",
+      "PlannerApp.Client.dll": "sha256-xCl3MDJx3Q4E4r4WwL7LNZGdWu+ZqfefV8LQeJR5nCA=",
       "System.Net.Http.Json.dll": "sha256-99dseBOagY3mzu5Y8Eqm8gRI+o8QbbCp7R2Ew9bQ+5E=",
       "System.Buffers.dll": "sha256-ZxXy75PYbzJxNfAc\/SAP1nUYm4gt1jSaOpFnBb9m85M=",
       "mscorlib.dll": "sha256-BaZPMj95+YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=",
@@ -68,7 +68,7 @@
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-czNf3btAeBW\/vvID5LAfgcsNZ+GM3ssVuPaMflcg0rs="
     },
     "pdb": {
-      "PlannerApp.Client.pdb": "sha256-xIrz9XODFst6wxvvevWLED0nB1GH8luiTILtnC8HVno=",
+      "PlannerApp.Client.pdb": "sha256-Ettdj6EH1WtGLu7hxTSIK7V4eiXAl\/x8ZsctOI+mlYI=",
       "System.Linq.Dynamic.Core.pdb": "sha256-zOBZ+bv44N0h0EaRYZhGqngeYcBonLjpA36C+TrA\/lA=",
       "PlannerApp.Shared.pdb": "sha256-PT5nAHKtpgns+zIaH45DQBOb4TC8La3xm5AvuNhye7I="
     },

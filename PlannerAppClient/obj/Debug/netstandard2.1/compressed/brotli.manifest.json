@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\q7uuBxGWYFI_3flB01lKQFxpL3IlhGwZBEO-6NHzSdk=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\xCl3MDJx3Q4E4r4WwL7LNZGdWu_ZqfefV8LQeJR5nCA=.hash",
       "Source": "C:\\Users\\ENG\\source\\repos\\PlannerApp\\PlannerAppClient\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\PlannerApp.Client.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/PlannerApp.Client.dll.br"
     },
@@ -301,7 +301,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\xIrz9XODFst6wxvvevWLED0nB1GH8luiTILtnC8HVno=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\Ettdj6EH1WtGLu7hxTSIK7V4eiXAl-x8ZsctOI_mlYI=.hash",
       "Source": "C:\\Users\\ENG\\source\\repos\\PlannerApp\\PlannerAppClient\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\PlannerApp.Client.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/PlannerApp.Client.pdb.br"
     },
@@ -336,7 +336,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\3ggrOseW8lIQc7VpLsVf2IOXjKblIK1BoononzxKhgk=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\biB9zXFYdvW1aUFS-APpYR794Gn_4fwl-UfgLQWwll4=.hash",
       "Source": "C:\\Users\\ENG\\source\\repos\\PlannerApp\\PlannerAppClient\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.br"
     }
